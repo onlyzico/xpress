@@ -56,7 +56,7 @@ class Xpress extends \Mikro\Mikro
      * @param string $path
      * @param array $data
      *
-     * @return \Xpress
+     * @return \Xpress\Xpress
      */
     public function theme(string $path, array $data = [])
     {

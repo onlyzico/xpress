@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @return \Xpress
+ * @return \Xpress\Xpress
  */
 function xp()
 {
