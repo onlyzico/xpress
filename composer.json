@@ -1,0 +1,21 @@
+{
+    "name": "onlyzico/xpress",
+    "description": "An extended framework for mikro.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Zico",
+            "email": "onlyzicoo@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3",
+        "onlyzico/xpress": "^1.0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Xpress\\": "src/"
+        },
+        "files": ["src/helper.php"]
+    }
+}
