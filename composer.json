@@ -10,7 +10,7 @@
     ],
     "require": {
         "php": ">=5.3",
-        "onlyzico/xpress": "^1.0.1"
+        "onlyzico/mikro": "^1.0.1"
     },
     "autoload": {
         "psr-4": {
