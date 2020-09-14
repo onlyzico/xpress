@@ -5,7 +5,7 @@
  */
 function xp()
 {
-    return Xpress::create();
+    return \Xpress\Xpress::create();
 }
 
 /**
