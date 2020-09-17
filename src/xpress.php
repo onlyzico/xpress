@@ -56,6 +56,14 @@ class Xpress extends \Mikro\Mikro
     }
 
     /**
+     * @return string
+     */
+    public function getThemeDir()
+    {
+        return $this->getBaseDir() . '/' . $this->getThemePath();
+    }
+
+    /**
      * @param string $key
      * @param mixed|null $fallback
      *
