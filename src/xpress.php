@@ -15,6 +15,11 @@ class Xpress extends \Mikro\Mikro
     protected $config = [];
 
     /**
+     * @var mixed
+     */
+    protected $themePath;
+
+    /**
      * @param string $path
      *
      * @return void
@@ -30,6 +35,24 @@ class Xpress extends \Mikro\Mikro
     public function getConfigPath()
     {
         return $this->configPath;
+    }
+
+    /**
+     * @param string $path
+     *
+     * @return void
+     */
+    public function setThemePath(string $path)
+    {
+        $this->themePath = $path;
+    }
+
+    /**
+     * @return string
+     */
+    public function getThemePath()
+    {
+        return $this->themePath ?: 'themes/' . $this->config('app.theme');
     }
 
     /**
@@ -60,7 +83,7 @@ class Xpress extends \Mikro\Mikro
      */
     public function theme(string $path, array $data = [])
     {
-        $this->setViewsPath('themes/' . $this->config('app.theme'));
+        $this->setViewsPath($this->getThemePath());
 
         return $this->view($path, $data);
     }
